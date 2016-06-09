@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Admin;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -29,13 +28,7 @@ class AuthController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = 'admin';
-    
-    protected $loginView = 'admin.auth.login';
-    
-    protected $guard = 'admin';
-    
-    protected $redirectAfterLogout = 'admin';
+    protected $redirectTo = '/';
 
     /**
      * Create a new authentication controller instance.
@@ -57,9 +50,8 @@ class AuthController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:admin',
-            'password' => 'required|confirmed|min:6',
-            'terms' => 'required',
+            'email' => 'required|email|max:255|unique:users',
+            'password' => 'required|min:6|confirmed',
         ]);
     }
 
@@ -71,7 +63,7 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return Admin::create([
+        return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),

@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'id',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -110,8 +110,6 @@ return [
 
     'log' => env('APP_LOG', 'single'),
 
-    'log_level' => env('APP_LOG_LEVEL', 'debug'),
-
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -150,9 +148,6 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
-        Collective\Html\HtmlServiceProvider::class,
-        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
-
         /*
          * Application Service Providers...
          */
@@ -160,10 +155,6 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        /*
-        * Acacha AdminLTE template provider
-        */
-        Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class
 
     ],
 
@@ -210,14 +201,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-        'Html' => Collective\Html\HtmlFacade::class,
-        'Form' => Collective\Html\FormFacade::class,
-
-        /*
-        * Acacha AdminLTE template alias
-        */
-        'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class
 
     ],
 
