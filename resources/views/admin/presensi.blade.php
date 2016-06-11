@@ -129,7 +129,11 @@ $(function () {
 });
 
 $(function () {
-    $("table").DataTable();
+    $("table").DataTable( {
+        language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.10.11/i18n/Indonesian-Alternative.json'
+        }
+    });
 });
 </script>
 @endsection
