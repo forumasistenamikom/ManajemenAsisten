@@ -6,6 +6,9 @@
 <body class="skin-blue sidebar-mini">
 <div class="wrapper">
 
+    @section('profile-url','profil')
+    @section('logout-url','keluar')
+
     @include('layouts.partials.mainheader')
 
     @include('layouts.partials.sidebar')

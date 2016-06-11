@@ -46,7 +46,7 @@
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">{{ trans('message.profile') }}</a>
+                                    <a href="@yield('profile-url')" class="btn btn-default btn-flat">{{ trans('message.profile') }}</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="@yield('logout-url')" class="btn btn-default btn-flat">{{ trans('message.signout') }}</a>
