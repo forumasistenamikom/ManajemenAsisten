@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+@extends('layouts.landing')
+
+@section('title', 'Forum Asisten')
+
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <title>Forum Asisten</title>
@@ -43,3 +47,4 @@
         </div>
     </body>
 </html>
+ -->
