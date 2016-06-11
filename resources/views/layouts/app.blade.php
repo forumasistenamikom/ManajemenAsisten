@@ -29,6 +29,7 @@
 
 @section('scripts')
     @include('layouts.partials.scripts')
+    @show
 @show
 
 </body>

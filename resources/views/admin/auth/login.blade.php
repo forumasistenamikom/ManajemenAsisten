@@ -8,7 +8,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('admin/home') }}">M<strong>i</strong>SME</a>
+            <a href="{{ url('admin/home') }}"><strong>Forum</strong>Asisten</a>
         </div><!-- /.login-logo -->
 
     @if (count($errors) > 0)

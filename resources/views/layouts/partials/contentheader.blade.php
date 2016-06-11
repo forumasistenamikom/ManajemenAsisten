@@ -1,11 +1,13 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        @yield('contentheader_title', 'MISME')
+        @yield('contentheader_title', 'Forum Asisten')
         <small>@yield('contentheader_description')</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> {{ trans('message.level') }}</a></li>
-        <li class="active">{{ trans('message.here') }}</li>
+        <li><a href="{{ url('') }}"><i class="fa fa-dashboard"></i> Dasbor {{-- trans('message.level') --}}</a></li>
+        @if ($__env->yieldContent('contentheader_level') != '')
+        <li class="active"> @yield('contentheader_level') {{-- trans('message.here') --}}</li>
+        @endif
     </ol>
 </section>

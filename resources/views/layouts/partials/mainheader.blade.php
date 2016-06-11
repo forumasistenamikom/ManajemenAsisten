@@ -4,9 +4,9 @@
     <!-- Logo -->
     <a href="{{ url('/home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>M</b>M</span>
+        <span class="logo-mini"><b>F</b>A</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>MIS</b>ME</span>
+        <span class="logo-lg"><b>Forum</b>Asisten</span>
     </a>
 
     <!-- Header Navbar -->
@@ -31,7 +31,7 @@
                             <img src="{{asset('/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"/>
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <!-- Auth::user()->name -->
-                            <span class="hidden-xs">{{ ('CRAM') }}</span>
+                            <span class="hidden-xs">{{ ('Forum') }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
@@ -39,7 +39,7 @@
                                 <img src="{{asset('/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
                                 <p>
                                     <!-- Auth::user()->name -->
-                                    {{ ('CRAM') }}
+                                    {{ ('Forum') }}
                                     <small>{{ trans('message.login') }} Nov. 2012</small>
                                 </p>
                             </li>

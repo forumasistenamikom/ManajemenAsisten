@@ -12,5 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin.dashboard');
+});
+
+Route::get('matakuliah', function () {
+    return view('admin.matakuliah');
+});
+
+Route::get('mahasiswa', function () {
+    return view('admin.mahasiswa');
+});
+
+Route::get('asisten', function () {
+    return view('admin.asisten');
+});
+
+Route::get('asisten/tambah/kolektif', function () {
+    return view('admin.tambah_kolektif');
+});
+
+Route::get('asisten/hapus/kolektif', function () {
+    return view('admin.hapus_kolektif');
+});
+
+Route::get('history', function () {
+    return view('admin.history');
+});
+
+Route::get('presensi', function () {
+    return view('admin.presensi');
 });
