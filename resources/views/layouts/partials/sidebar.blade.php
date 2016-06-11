@@ -22,7 +22,7 @@
         <ul class="sidebar-menu">
             <li class="header">NAVIGASI UTAMA</li>
             <li id="dashboard" >
-                <a href="{{ url('') }}">
+                <a href="{{ url('dasbor') }}">
                     <i class="fa fa-dashboard"></i> <span>Dasbor</span>
                 </a>
             </li>
